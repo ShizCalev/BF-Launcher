@@ -18,7 +18,7 @@ int main(int argc, char **argv)
     FreeConsole();
     //Return error if no parameter is specified
     if (argv[1]==NULL){
-        MessageBox(0, "Specify which game to launch: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s", "Error", MB_OK);
+        MessageBox(0, "Specify which game to launch: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s \n\n TitanFall 2 = TF2 \n Mass Effect 3 = ME3\n Star Wars Battlefront: Ultimate Edition = SWBF1-U", "Error", MB_OK);
         return 1;}
     //determine which battlefield to start
 	if (_stricmp(argv[1], "BF1-U") == 0) {
@@ -45,8 +45,20 @@ int main(int argc, char **argv)
 		gEX = "bf4.exe";
 		oID = "origin://launchgame/OFB-EAST:109546867";
 	}
+	else if (_stricmp(argv[1], "TF2") == 0) {
+		gEX = "Titanfall2.exe";
+		oID = "origin://launchgame/Origin.OFR.50.0001456";
+	}
+	else if (_stricmp(argv[1], "ME3") == 0) {
+		gEX = "MassEffect3.exe";
+		oID = "origin://launchgame/DR:229644400";
+	}
+	else if (_stricmp(argv[1], "SWBF1-U") == 0) {
+		gEX = "starwarsbattlefront.exe";
+		oID = "origin://launchgame/Origin.OFR.50.0001211";
+	}
     else {
-        MessageBox(0, "Please specify a valid parameter: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s", "Error", MB_OK);
+        MessageBox(0, "Please specify a valid parameter: \n\nBattlefield 1: Ultimate = BF1-u \nBattlefield 1: Deluxe = BF1-d \nBattlefield 1: Standard = BF1-s \n\nBattlefield 4: Premium = BF4-p \nBattlefield 4: Deluxe = BF4-d \nBattlefield 4: Standard = BF4-s \n\n TitanFall 2 = TF2 \n Mass Effect 3 = ME3\n Star Wars Battlefront: Ultimate Edition = SWBF1-U", "Error", MB_OK);
         return 1;
         }
     //determine origin directory
