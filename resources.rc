@@ -4,8 +4,8 @@
 A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "ico.ico"
 
 1 VERSIONINFO
-FILEVERSION 1,1,0,0
-PRODUCTVERSION 1,1,0,0
+FILEVERSION 1,1,1,0
+PRODUCTVERSION 1,1,1,0
 FILETYPE VFT_APP
 {
   BLOCK "StringFileInfo"
@@ -13,13 +13,13 @@ FILETYPE VFT_APP
 		 BLOCK "040904E4"
 		 {
 			 VALUE "CompanyName", "RAMBO"
-			 VALUE "FileVersion", "1.1.0.0"
-			 VALUE "FileDescription", "Battlefield Launcher"
-			 VALUE "InternalName", "BF-Launcher"
+			 VALUE "FileVersion", "1.1.1.0"
+			 VALUE "FileDescription", "Origin Steam Overlay Launcher"
+			 VALUE "InternalName", "Origin-Launcher"
 			 VALUE "LegalCopyright", "RAMBO 2017"
 			 VALUE "LegalTrademarks", "RAMBO"
-			 VALUE "OriginalFilename", "Battlefield Launcher"
-			 VALUE "ProductName", "Battlefield Launcher"
+			 VALUE "OriginalFilename", "Origin-Launcher"
+			 VALUE "ProductName", "Origin-Launcher"
 			 VALUE "ProductVersion", "Initial"
 		 }
 	 }
